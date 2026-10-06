@@ -1,0 +1,11 @@
+---
+name: experiment-designer
+description: ResearchOS V0.1 module placeholder for experiment designer. Detailed protocol pending implementation.
+version: 0.1.0
+---
+
+# experiment designer
+
+Status: scaffold placeholder.
+
+This module must obey the root ResearchOS scientific contract, epistemic-state rules, modification-authority rules, and state-ledger discipline.
