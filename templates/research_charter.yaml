@@ -1,0 +1,84 @@
+schema_version: 0.1
+
+project_identity:
+  working_title: null
+  short_name: null
+  project_type: UNKNOWN
+  field: null
+  subfield: null
+
+objective:
+  immediate: null
+  long_term: null
+  target_output: null
+  target_venue: null
+  deadline: null
+
+maturity:
+  stage: IDEA
+  rationale: null
+
+artifacts: []
+# - id: A001
+#   type: manuscript
+#   name: null
+#   location_or_ref: null
+#   provenance: null
+#   version: null
+#   evidence_usable: false
+#   notes: null
+
+evidence_status:
+  known: []
+  user_reported: []
+  inferred: []
+  assumed: []
+  unknown: []
+
+preliminary_contract:
+  problem:
+    statement: null
+    status: PROVISIONAL
+  research_questions: []
+  gap:
+    statement: null
+    status: UNKNOWN
+  hypotheses: []
+  engineering_objectives: []
+  contributions: []
+  intended_evidence: []
+
+constraints:
+  time: null
+  compute: null
+  data: null
+  equipment: null
+  monetary: null
+  team: null
+  administrative: []
+  hard_constraints: []
+
+inherited_knowledge:
+  applicable: false
+  risks: []
+  # - item: null
+  #   recoverability: AUTHOR_CONFIRMATION_REQUIRED
+  #   impact: null
+
+decision_bottleneck:
+  statement: null
+  impact: null
+
+routing:
+  intake_status: ROUTABLE
+  recommended_next_skill: idea-auditor
+  reason: null
+  highest_value_next_action: null
+
+gate_state:
+  reality_gate_1: NOT_REACHED
+  reality_gate_2: NOT_REACHED
+  evidence_gate: NOT_REACHED
+  submission_gate: NOT_REACHED
+
+last_updated: null
