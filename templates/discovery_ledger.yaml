@@ -1,0 +1,77 @@
+schema_version: 0.1
+
+scan:
+  field: null
+  subfield: null
+  search_date: null
+  pulse_window: null
+  emerging_window: null
+  trend_window: null
+  constraints: []
+
+sources: []
+# - id: SRC001
+#   type: paper
+#   title: null
+#   year: null
+#   venue: null
+#   url_or_identifier: null
+#   source_status: primary
+#   verified: false
+#   relevance: null
+
+trend_signals: []
+# - id: T001
+#   topic: null
+#   status: EMERGING
+#   evidence_ids: []
+#   weakening_evidence_ids: []
+#   notes: null
+
+opportunities: []
+# - id: OPP001
+#   title: null
+#   problem: null
+#   why_now: null
+#   trend_status: UNKNOWN
+#   evidence_ids: []
+#   open_question: null
+#   benchmark_or_data: []
+#   feasibility: UNKNOWN
+#   crowding_risk: UNKNOWN
+#   contribution_types: []
+#   uncertainties: []
+
+ideas: []
+# - id: IDEA001
+#   generation_round: independent
+#   source_lens: mechanism
+#   linked_opportunity_ids: []
+#   statement: null
+#   assumptions: []
+#   predictions: []
+#   evidence_ids: []
+#   strongest_objection: null
+#   novelty_status: UNVERIFIED
+#   feasibility: UNKNOWN
+#   shortlist_status: NEEDS_LITERATURE_CHECK
+
+evaluation_criteria: []
+# - criterion: information_gain
+#   direction: higher_is_better
+#   scale_definition: null
+#   weight: null
+
+clusters: []
+# - id: CL001
+#   basis: mechanism
+#   idea_ids: []
+
+search_blind_spots: []
+
+handoff:
+  recommended_next_skill: null
+  candidate_ids: []
+  reason: null
+
+last_updated: null

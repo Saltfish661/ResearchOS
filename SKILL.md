@@ -58,8 +58,10 @@ When editing or completing research artifacts, classify proposed changes as:
 
 Determine the current project stage and route to the smallest appropriate skill.
 
-- unclear project state -> `research-intake`
-- raw idea / topic / novelty question -> `idea-auditor`
+- no concrete idea / wants current directions -> `research-radar`
+- wants divergent idea generation from a broad field/opportunity map -> `scientific-brainstorming`
+- unclear existing project state -> `research-intake`
+- concrete raw idea / topic / novelty question -> `idea-auditor`
 - prior work / SOTA / gap verification -> `literature-mapper`
 - RQ / mechanism / prediction formation -> `hypothesis-builder`
 - experiment / baseline / ablation / metric planning -> `experiment-designer`
@@ -125,6 +127,7 @@ Rules:
 ## State discipline
 
 ResearchOS should maintain or update, when available:
+- `discovery_ledger.yaml`
 - `research_state.yaml`
 - `literature_ledger.yaml`
 - `claim_ledger.yaml`
@@ -136,6 +139,18 @@ Every major conclusion should ideally be traceable backward:
 Conclusion -> Claim -> Result/Evidence -> Experiment/Source -> Hypothesis/Objectives -> Research Question -> Gap
 
 Broken links are research risks and should be surfaced explicitly.
+
+## Discovery behavior
+
+When the user has no concrete research idea, do not force `research-intake` to invent one.
+
+Preferred discovery flow:
+
+`Research Radar -> Scientific Brainstorming -> Idea Auditor -> Literature Mapper -> Research Intake/project initialization when a direction is selected`
+
+Research Radar may use current web/scholarly search because trend and recent-paper questions are time-sensitive. Record search dates and keep trend signals separate from validated gaps.
+
+Scientific Brainstorming should preserve independent pre-literature ideation when practical, then reopen idea generation after literature exposure rather than letting the first papers fully anchor the search space.
 
 ## Handoff behavior
 
