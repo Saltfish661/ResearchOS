@@ -1,0 +1,111 @@
+schema_version: 0.1
+
+audit:
+  manuscript_id: null
+  mode: full_audit
+  paper_type: null
+  target_venue_or_degree: null
+  date: null
+  auditor_version: "paper-auditor-v0.1"
+
+profile:
+  actual_research_question: null
+  central_gap: null
+  central_claim_ids: []
+  contribution_ids: []
+  manuscript_status: null
+
+skeleton:
+  status: UNKNOWN
+  rq_closure: []
+  # - rq_id: RQ1
+  #   method_refs: []
+  #   evidence_refs: []
+  #   result_refs: []
+  #   conclusion_refs: []
+  #   closure: CLOSED
+  contribution_closure: []
+  section_responsibilities: []
+
+claim_evidence_matrix: []
+# - claim_id: C001
+#   manuscript_locations: []
+#   evidence_ids: []
+#   support_grade: C_WEAK
+#   scope_match: false
+#   wording_match: false
+#   notes: null
+
+method_experiment_closure: []
+# - method_element: null
+#   method_location: null
+#   evaluation_refs: []
+#   status: UNEVALUATED
+#   risk: null
+
+consistency:
+  numerical_issues: []
+  terminology_issues: []
+  figure_table_issues: []
+  contribution_conclusion_issues: []
+
+reproducibility:
+  status: UNKNOWN
+  missing_items: []
+  high_risk_missing_items: []
+  notes: null
+
+citation_and_novelty:
+  citation_risks: []
+  novelty_risk: UNVERIFIED
+  missing_prior_work_risks: []
+
+issues: []
+# - id: PA-001
+#   severity: MAJOR
+#   priority: REQUIRED
+#   category: claim_evidence
+#   location:
+#     section: null
+#     page: null
+#     detail: null
+#   affected_rq_ids: []
+#   affected_claim_ids: []
+#   issue: null
+#   why_it_matters: null
+#   evidence_status: null
+#   repair:
+#     action: null
+#     authority: VERIFY
+#     next_step: null
+#   dependencies: []
+#   blocking: false
+#   status: open
+
+reviewer_red_team:
+  strongest_reject_reason: null
+  strongest_major_revision_reason: null
+  most_vulnerable_claim_id: null
+  most_vulnerable_figure_or_table: null
+  likely_multi_reviewer_issue: null
+  notes: []
+
+revision_plan: []
+# - rank: 1
+#   issue_id: PA-001
+#   rationale: null
+#   dependency_order: null
+
+verdict:
+  status: NOT_READY
+  confidence: null
+  blocking_issue_ids: []
+  known_residual_risks: []
+
+reaudit:
+  required: false
+  affected_claim_ids: []
+  affected_sections: []
+  rerun_checks: []
+
+last_updated: null
