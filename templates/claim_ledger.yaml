@@ -1,0 +1,15 @@
+schema_version: 0.1
+claims: []
+# Example:
+# - id: C001
+#   claim: null
+#   type: empirical        # empirical | mechanism | novelty | methodological | interpretation
+#   epistemic_state: HYPOTHESIZED
+#   evidence_ids: []       # EXP-..., P-..., FIG-..., TAB-...
+#   evidence_strength: UNKNOWN
+#   alternative_explanations: []
+#   limitations: []
+#   allowed_wording: null
+#   forbidden_wording: []
+#   manuscript_locations: []
+#   status: provisional
