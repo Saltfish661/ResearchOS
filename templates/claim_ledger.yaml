@@ -1,15 +1,96 @@
 schema_version: 0.1
+
 claims: []
 # Example:
 # - id: C001
 #   claim: null
-#   type: empirical        # empirical | mechanism | novelty | methodological | interpretation
+#   type: empirical
+#   linked_rq_ids: []
+#   linked_hypothesis_ids: []
 #   epistemic_state: HYPOTHESIZED
-#   evidence_ids: []       # EXP-..., P-..., FIG-..., TAB-...
-#   evidence_strength: UNKNOWN
-#   alternative_explanations: []
+#   evidence_strength: NONE
+#   evidence_ids: []
+#   observation_ids: []
+#   alternative_explanations:
+#     - id: ALT-C001-1
+#       statement: null
+#       status: UNTESTED
+#       evidence_ids: []
+#   mechanism_evidence:
+#     level: M0
+#     evidence_ids: []
+#     notes: null
+#   causal_identification:
+#     status: NOT_APPLICABLE
+#     notes: null
+#   robustness_scope:
+#     datasets: []
+#     domains: []
+#     conditions: []
+#     populations: []
+#     seeds_or_repetitions: null
 #   limitations: []
 #   allowed_wording: null
 #   forbidden_wording: []
 #   manuscript_locations: []
 #   status: provisional
+#   history:
+#     - from_state: null
+#       to_state: HYPOTHESIZED
+#       reason: "Claim created."
+#       evidence_ids: []
+#       date: null
+#   last_reviewed: null
+
+observations: []
+# Directly measured or reproducibly computed results.
+# - id: OBS-001
+#   experiment_id: EXP-001
+#   statement: null
+#   metric_or_measure: null
+#   value: null
+#   uncertainty: null
+#   artifact_refs: []
+#   validation_status: unreviewed
+
+evidence_gate_reviews: []
+# - id: EG-001
+#   claim_ids: [C001]
+#   experiment_ids: [EXP-001]
+#   execution_validity: VALID
+#   protocol_deviations: []
+#   primary_outcome_assessed: true
+#   uncertainty_characterized: false
+#   alternatives_reviewed: false
+#   wording_calibrated: false
+#   limitations_recorded: false
+#   gate_status: BLOCKED
+#   reviewer_notes: null
+#   date: null
+
+wording_scale:
+  weak:
+    preferred:
+      - "may"
+      - "is consistent with"
+      - "suggests"
+  moderate:
+    preferred:
+      - "supports"
+      - "improves under the evaluated conditions"
+      - "is associated with"
+  strong:
+    caution:
+      - "demonstrates"
+      - "causes"
+      - "proves"
+      - "establishes the mechanism"
+
+mechanism_evidence_levels:
+  M0: "No mechanism evidence; endpoint outcome only."
+  M1: "Mechanism-consistent correlation or diagnostic change."
+  M2: "Discriminating evidence against a strong alternative."
+  M3: "Intervention or mediation evidence tied to the mechanism."
+  M4: "Multiple converging lines of strong causal/mechanistic evidence."
+
+last_updated: null
