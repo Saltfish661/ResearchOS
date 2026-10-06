@@ -1,0 +1,101 @@
+schema_version: 0.1
+
+manuscript:
+  title_working: null
+  paper_type: null
+  target_audience: null
+  target_venue: null
+  readiness: NOT_DRAFTABLE
+
+story:
+  one_sentence: null
+  central_problem: null
+  central_gap_ids: []
+  central_rq_ids: []
+  central_claim_ids: []
+
+contributions: []
+# - id: CONTRIB-001
+#   statement: null
+#   type: methodological
+#   claim_ids: []
+#   evidence_ids: []
+#   novelty_evidence_ids: []
+#   section_ids: []
+#   strength: UNKNOWN
+#   unresolved_risks: []
+
+sections: []
+# - id: SEC-INTRO
+#   title: Introduction
+#   responsibility: null
+#   claim_ids: []
+#   source_ids: []
+#   figure_ids: []
+#   table_ids: []
+#   blockers: []
+
+claim_traceability: []
+# - claim_id: C001
+#   evidence_ids: [EXP-001]
+#   source_ids: []
+#   introduced_in: SEC-INTRO
+#   results_location: SEC-RESULT-1
+#   discussion_location: SEC-DISCUSSION
+#   conclusion_location: SEC-CONCLUSION
+#   abstract_included: true
+#   wording_constraint: "under the evaluated conditions"
+
+figures: []
+# - id: FIG-001
+#   role: main_evidence
+#   purpose: null
+#   message: null
+#   claim_ids: []
+#   experiment_ids: []
+#   artifact_refs: []
+#   caption_requirements: []
+#   provenance_verified: false
+
+tables: []
+# - id: TAB-001
+#   role: baseline_comparison
+#   purpose: null
+#   claim_ids: []
+#   experiment_ids: []
+#   artifact_refs: []
+#   provenance_verified: false
+
+paragraph_plans: []
+# - id: P-INTRO-01
+#   section_id: SEC-INTRO
+#   purpose: null
+#   primary_claim_id: null
+#   supporting_evidence_ids: []
+#   supporting_source_ids: []
+#   boundary_or_qualifier: null
+#   status: planned
+
+blocked_statements: []
+# - id: BLOCK-001
+#   desired_statement: null
+#   reason: EVIDENCE_REQUIRED
+#   affected_section_ids: []
+#   resolution: null
+
+wording_constraints:
+  global_forbidden: []
+  claim_specific: []
+
+consistency_checks:
+  contribution_count_matches: null
+  rq_answered: null
+  abstract_claims_traced: null
+  conclusion_claims_traced: null
+  terminology_stable: null
+
+handoff:
+  next_skill: paper-auditor
+  blockers: []
+
+last_updated: null
