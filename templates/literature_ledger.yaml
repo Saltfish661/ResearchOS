@@ -1,0 +1,26 @@
+schema_version: 0.1
+search_log: []
+# Example search entry:
+# - id: S001
+#   database: Google Scholar
+#   query: '...'
+#   date: YYYY-MM-DD
+#   inclusion_rule: '...'
+#   exclusion_rule: '...'
+
+papers: []
+# Example paper entry:
+# - id: P001
+#   citation: null
+#   doi_or_url: null
+#   source_type: primary
+#   research_problem: null
+#   method: null
+#   data: null
+#   findings: []
+#   limitations: []
+#   relevant_claims: []
+#   supports_gap: []
+#   contradicts_gap: []
+#   citation_verified: false
+#   notes: null
