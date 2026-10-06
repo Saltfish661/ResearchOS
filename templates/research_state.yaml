@@ -17,6 +17,11 @@ constraints:
   hard_constraints: []
 
 research_questions: []
+# Example:
+# - id: RQ1
+#   question: null
+#   status: active
+#   linked_gap_ids: []
 
 problem:
   statement: null
@@ -29,6 +34,31 @@ gap:
   evidence_ids: []
 
 hypotheses: []
+# Example:
+# - id: H1
+#   linked_rq_ids: [RQ1]
+#   statement: null
+#   type: mechanism
+#   epistemic_state: HYPOTHESIZED
+#   confirmatory_status: CONFIRMATORY
+#   mechanism:
+#     statement: null
+#     epistemic_state: HYPOTHESIZED
+#   assumptions: []
+#   predictions: []
+#   alternatives: []
+#   failure_criteria: []
+#   priority: high
+#   status: proposed
+
+engineering_objectives: []
+# Use when the research contribution is primarily a measurable system/engineering target.
+# - id: O1
+#   statement: null
+#   success_criteria: []
+#   failure_criteria: []
+#   linked_rq_ids: []
+
 contributions: []
 
 current_gate:
