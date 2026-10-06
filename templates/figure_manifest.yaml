@@ -1,0 +1,68 @@
+schema_version: 0.1
+
+figures: []
+# - id: FIG-001
+#   spec_ref: templates-or-project-path/figure_spec.yaml
+#   spec_version: 1
+#   spec_hash: null
+#   render_id: RENDER-001
+#   renderer:
+#     name: null
+#     version: null
+#     route: structured
+#     # structured | image_assisted_reconstruction | decorative_image
+#   source_artifacts: []
+#   generated_at: null
+#   outputs:
+#     - format: svg
+#       path: null
+#       editable: true
+#       primary: true
+#     - format: pdf
+#       path: null
+#       editable: partial
+#       primary: false
+#     - format: png
+#       path: null
+#       editable: false
+#       role: preview
+#   image_assist:
+#     used: false
+#     provider: null
+#     model: null
+#     draft_asset_ref: null
+#     draft_status: NONE
+#   editability:
+#     grade: E0
+#     text_is_text: null
+#     semantic_groups: null
+#     regenerable_from_spec: null
+#     embedded_full_canvas_raster: null
+#     path_complexity_flag: null
+#   provenance:
+#     claim_ids: []
+#     experiment_ids: []
+#     source_ids: []
+#     data_artifact_refs: []
+#     manual_cosmetic_edits: []
+#     manual_scientific_edits: []
+#     provenance_intact: true
+#   qa:
+#     scientific_status: UNCHECKED
+#     semantic_status: UNCHECKED
+#     visual_status: UNCHECKED
+#     editability_status: UNCHECKED
+#     auditor_notes: []
+#   manuscript_usage:
+#     sections: []
+#     caption_ref: null
+#   status: draft
+
+editability_grades:
+  E0: "Raster only."
+  E1: "Vector shell; flattened/path-heavy content."
+  E2: "Editable text and primitives."
+  E3: "Semantic groups with stable object identities."
+  E4: "Regenerable from semantic spec plus source artifacts."
+
+last_updated: null
