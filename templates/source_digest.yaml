@@ -1,0 +1,134 @@
+schema_version: 0.2
+
+source:
+  id: SRC-001
+  work_family_id: WORK-001
+  state: CANDIDATE
+  intended_use: []
+  discovery_provenance:
+    found_via: null
+    query_or_context: null
+    decision_question_ids: []
+
+identity:
+  canonical_title: null
+  authors: []
+  year: null
+  venue: null
+  volume: null
+  issue: null
+  pages: null
+  doi: null
+  arxiv_id: null
+  publisher_id: null
+  canonical_url: null
+  identity_confidence: LOW
+  identity_verified_at: null
+
+classification:
+  source_class: PRIMARY_RESEARCH
+  publication_status: null
+  peer_reviewed: null
+
+version:
+  label: null
+  relation_to_preferred_version: UNKNOWN
+  preferred_version_source_id: null
+  related_source_ids: []
+  correction_or_retraction_refs: []
+  version_notes: null
+
+access:
+  status: METADATA_ONLY
+  original_ref: null
+  acquired_artifacts: []
+  # - id: ART-SRC001-PDF
+  #   type: pdf
+  #   path_or_url: null
+  #   sha256: null
+  #   source: publisher
+  #   acquired_at: null
+  full_text_inspected: false
+  supplement_inspected: false
+  access_limitations: []
+
+ingestion:
+  depth: quick_identity
+  # quick_identity | focused_digest | full_digest
+  started_at: null
+  completed_at: null
+  atomic_complete: false
+  checkpoint: null
+
+structure:
+  sections_found: []
+  figures_found: []
+  tables_found: []
+  equations_found: []
+  supplements_found: []
+
+digest:
+  research_problem: null
+  objective_or_rq: null
+  stated_gap: null
+  method_family: null
+  method_summary: null
+  mechanism_summary: null
+  data_or_population: null
+  experimental_design: null
+  baselines_or_controls: []
+  primary_metrics: []
+  key_results: []
+  author_claimed_contributions: []
+  explicit_limitations: []
+  inferred_limitations: []
+
+evidence_units: []
+# - id: EV-SRC001-01
+#   epistemic_role: SOURCE_SHOWS
+#   # SOURCE_REPORTS | SOURCE_SHOWS | RESEARCHOS_INFERS
+#   evidence_type: result
+#   statement: null
+#   locator:
+#     page: null
+#     section: null
+#     paragraph_or_heading: null
+#     figure: null
+#     table: null
+#     equation: null
+#     supplement: null
+#   support_strength: null
+#   linked_gap_ids: []
+#   linked_claim_ids: []
+#   notes: null
+
+relevance:
+  supports_gap_ids: []
+  weakens_gap_ids: []
+  supports_claim_ids: []
+  contradicts_claim_ids: []
+  defines_baseline_for_experiment_ids: []
+  defines_metric_or_protocol: []
+  feasibility_implications: []
+  novelty_implications: []
+
+usability:
+  status: IDENTIFIED_ONLY
+  # VERIFIED_SOURCE | PARTIAL_SOURCE | IDENTIFIED_ONLY | UNRESOLVABLE | RETRACTED_OR_SUPERSEDED
+  valid_for:
+    bibliographic_mention: false
+    background_support: false
+    technical_method_claim: false
+    empirical_result_claim: false
+    novelty_conflict: false
+    mechanism_support: false
+  unresolved_risks: []
+
+quality:
+  source_identity_checked: false
+  version_checked: false
+  evidence_locations_checked: false
+  source_vs_inference_separated: false
+  important_visuals_inspected: false
+
+last_updated: null
