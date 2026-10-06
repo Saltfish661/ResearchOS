@@ -1,26 +1,155 @@
 schema_version: 0.1
+
+decision_questions: []
+# Example:
+# - id: LQ001
+#   question: "Does prior work already implement mechanism X for task Y?"
+#   mode: targeted_novelty_check
+#   status: open
+#   linked_research_question_ids: [RQ1]
+
+scope:
+  topic: null
+  date_range: null
+  languages: []
+  databases_or_sources: []
+  inclusion_rules: []
+  exclusion_rules: []
+  known_access_limits: []
+
+terminology:
+  canonical_terms: []
+  synonyms: []
+  historical_terms: []
+  neighboring_terms: []
+  excluded_ambiguous_terms: []
+
 search_log: []
-# Example search entry:
+# Example:
 # - id: S001
-#   database: Google Scholar
-#   query: '...'
+#   decision_question_ids: [LQ001]
+#   source: Semantic Scholar
+#   query: "..."
+#   query_family: semantic_novelty
 #   date: YYYY-MM-DD
-#   inclusion_rule: '...'
-#   exclusion_rule: '...'
+#   result_count: null
+#   filters: []
+#   notes: null
 
 papers: []
-# Example paper entry:
+# Example:
 # - id: P001
-#   citation: null
-#   doi_or_url: null
-#   source_type: primary
-#   research_problem: null
-#   method: null
-#   data: null
-#   findings: []
-#   limitations: []
-#   relevant_claims: []
-#   supports_gap: []
-#   contradicts_gap: []
+#   citation:
+#     title: null
+#     authors: []
+#     year: null
+#     venue: null
+#     doi: null
+#     arxiv_id: null
+#     url: null
+#   publication_status: peer_reviewed
 #   citation_verified: false
+#   version_notes: null
+#   triage: CORE
+#   research_problem: null
+#   objective_or_rq: null
+#   method_family: null
+#   method: null
+#   mechanism: null
+#   data_or_population: null
+#   evaluation_protocol: null
+#   key_findings: []
+#   author_claimed_contributions: []
+#   explicit_limitations: []
+#   inferred_limitations: []
+#   relation_to_current_project: null
+#   supports_gap_ids: []
+#   contradicts_gap_ids: []
+#   supports_claim_ids: []
+#   contradicts_claim_ids: []
+#   evidence_locations: []
 #   notes: null
+
+sota_families: []
+# Example:
+# - id: MF001
+#   name: "Decoupled long-tail learning"
+#   description: null
+#   representative_paper_ids: []
+#   strengths: []
+#   weaknesses: []
+#   relevance_to_project: null
+
+gap_claims: []
+# Example:
+# - id: G001
+#   statement: null
+#   type: METHOD_LIMITATION
+#   supporting_paper_ids: []
+#   contradicting_paper_ids: []
+#   evidence_directness: UNKNOWN
+#   confidence: UNKNOWN
+#   status: candidate
+#   implication_for_project: null
+
+novelty_assessment:
+  problem_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+  method_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+  mechanism_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+  application_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+  experimental_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+  system_or_integration_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+  dataset_or_resource_novelty:
+    status: UNKNOWN
+    evidence_ids: []
+
+contradiction_searches: []
+# Example:
+# - id: CS001
+#   target_gap_or_claim_id: G001
+#   query: "..."
+#   source: null
+#   result_paper_ids: []
+#   outcome: null
+#   date: YYYY-MM-DD
+
+citation_chains: []
+# Example:
+# - from_paper_id: P001
+#   relation: cites
+#   to_paper_id: P002
+#   reason_followed: "Original source of the baseline limitation claim."
+
+coverage:
+  confidence: LOW
+  represented_method_families: []
+  known_uncovered_areas: []
+  important_access_failures: []
+  saturation_indicators: []
+  stopping_reason: null
+
+unresolved_literature_risks: []
+# Example:
+# - id: LR001
+#   risk: "Recent workshop literature may contain close prior work."
+#   impact: high
+#   mitigation: "Search 2025-2026 workshop proceedings."
+
+handoff:
+  recommended_next_skill: null
+  reason: null
+  blocking_questions: []
+
+last_updated: null
