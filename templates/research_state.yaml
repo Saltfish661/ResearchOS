@@ -1,0 +1,46 @@
+schema_version: 0.1
+project:
+  title: null
+  field: null
+  project_type: null
+  stage: intake
+  target_output: null
+  target_venue: null
+
+constraints:
+  time_budget: null
+  compute_budget: null
+  monetary_budget: null
+  available_data: []
+  available_equipment: []
+  team_capabilities: []
+  hard_constraints: []
+
+research_questions: []
+
+problem:
+  statement: null
+  importance: UNKNOWN
+  evidence_ids: []
+
+gap:
+  statement: null
+  novelty_confidence: UNKNOWN
+  evidence_ids: []
+
+hypotheses: []
+contributions: []
+
+current_gate:
+  name: null
+  status: not_evaluated
+  blockers: []
+
+blocking_questions: []
+
+next_action:
+  action: null
+  reason: null
+  expected_decision_value: null
+
+last_updated: null
