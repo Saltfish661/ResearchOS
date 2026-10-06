@@ -62,6 +62,7 @@ Determine the current project stage and route to the smallest appropriate skill.
 - wants divergent idea generation from a broad field/opportunity map -> `scientific-brainstorming`
 - unclear existing project state -> `research-intake`
 - concrete raw idea / topic / novelty question -> `idea-auditor`
+- identified PDF / DOI / arXiv / scholarly source requiring evidence inspection -> `source-ingestor`
 - prior work / SOTA / gap verification -> `literature-mapper`
 - RQ / mechanism / prediction formation -> `hypothesis-builder`
 - experiment / baseline / ablation / metric planning -> `experiment-designer`
@@ -128,11 +129,14 @@ Rules:
 
 ResearchOS should maintain or update, when available:
 - `discovery_ledger.yaml`
+- `source_index.yaml` / per-source `source_digest.yaml`
 - `research_state.yaml`
 - `literature_ledger.yaml`
 - `claim_ledger.yaml`
 - `experiment_ledger.yaml`
 - `decision_log.md`
+
+Scholarly evidence used for material claims should ideally pass through `source-ingestor` so that bibliographic identity, version, access depth, and evidence location are explicit.
 
 Every major conclusion should ideally be traceable backward:
 
