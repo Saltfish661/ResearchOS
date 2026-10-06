@@ -1,23 +1,124 @@
 schema_version: 0.1
+
 experiments: []
 # Example:
 # - id: EXP-001
-#   question_or_hypothesis_ids: []
+#   version: 1
+#   title: null
+#   linked_rq_ids: [RQ1]
+#   linked_hypothesis_ids: [H1]
+#   linked_objective_ids: []
+#   linked_claim_ids: []
+#   experiment_class: CONFIRMATORY
 #   purpose: null
-#   discriminating_prediction: null
+#   decision:
+#     statement: null
+#     if_positive: null
+#     if_negative: null
+#     if_ambiguous: null
+#   discriminating_prediction:
+#     statement: null
+#     competing_alternative_ids: []
+#     expected_pattern: null
+#   design:
+#     type: null
+#     independent_variables: []
+#     dependent_variables: []
+#     intentionally_manipulated_factors: []
+#   baselines:
+#     - name: null
+#       role: null
+#       source_or_reference: null
+#       tuning_budget: null
 #   controls: []
-#   baselines: []
-#   dataset_version: null
-#   code_commit: null
-#   config: null
-#   seeds: []
-#   hardware: null
-#   metrics: []
-#   failure_criterion: null
-#   result_summary: null
-#   artifact_refs: []
-#   supports_claim_ids: []
-#   contradicts_claim_ids: []
-#   alternative_explanations: []
-#   status: planned        # planned | running | completed | failed | invalidated
+#   fairness_constraints:
+#     must_match: []
+#     may_differ_with_justification: []
+#   confounders:
+#     - id: CF-001
+#       description: null
+#       likelihood: UNKNOWN
+#       impact: UNKNOWN
+#       mitigation: null
+#       residual_risk: null
+#   data:
+#     source: null
+#     version: null
+#     unit_of_analysis: null
+#     inclusion_rules: []
+#     exclusion_rules: []
+#     split_protocol: null
+#     leakage_checks: []
+#     sampling_plan: null
+#     sample_size_rationale: null
+#   metrics:
+#     primary: []
+#     secondary: []
+#     diagnostic: []
+#     mechanism: []
+#     resource: []
+#   repetition_and_statistics:
+#     random_seeds: []
+#     repetitions: null
+#     uncertainty_method: null
+#     statistical_test_or_model: null
+#     effect_size: null
+#     multiple_comparison_plan: null
+#   analysis_plan:
+#     primary_comparison: null
+#     aggregation_rule: null
+#     outlier_rule: null
+#     exclusion_rule: null
+#   outcome_criteria:
+#     pass: null
+#     fail: null
+#     ambiguous: null
+#     invalidated: null
+#   resources:
+#     compute: null
+#     wall_clock: null
+#     monetary_cost: null
+#     storage: null
+#     human_effort: null
+#     external_dependencies: []
+#     risk: UNKNOWN
+#   reproducibility:
+#     code_commit: null
+#     config_ref: null
+#     environment_ref: null
+#     hardware: null
+#     dataset_hash_or_version: null
+#     random_seed_recorded: false
+#     command_or_workflow_ref: null
+#   dependencies:
+#     requires_experiment_ids: []
+#     downstream_experiment_ids: []
+#   execution:
+#     status: planned
+#     started_at: null
+#     completed_at: null
+#     protocol_deviations: []
+#     raw_artifact_refs: []
+#     result_summary: null
+#   interpretation:
+#     supports_claim_ids: []
+#     contradicts_claim_ids: []
+#     unresolved_alternatives: []
+#   readiness: DRAFT
 #   review_status: unreviewed
+
+experiment_queue: []
+# Ordered by expected decision value, not by convenience.
+# - rank: 1
+#   experiment_id: EXP-001
+#   decision_value: high
+#   cost: low
+#   rationale: "Cheap falsification of critical assumption."
+
+global_execution_policy:
+  test_set_iteration_allowed: false
+  preserve_failed_runs: true
+  require_protocol_deviation_log: true
+  require_reproducibility_metadata_before_evidence_upgrade: true
+
+last_updated: null
