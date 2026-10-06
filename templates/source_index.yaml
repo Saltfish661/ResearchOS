@@ -1,0 +1,46 @@
+schema_version: 0.2
+
+works: []
+# - id: WORK-001
+#   preferred_source_id: SRC-001
+#   title_normalized: null
+#   source_ids: []
+#   dedup_keys:
+#     doi: null
+#     arxiv_id: null
+#     publisher_id: null
+#     title_first_author_year: null
+
+sources: []
+# - id: SRC-001
+#   work_family_id: WORK-001
+#   digest_ref: null
+#   state: VERIFIED_SOURCE
+#   source_class: CONFERENCE_PAPER
+#   canonical_title: null
+#   doi: null
+#   arxiv_id: null
+#   access_status: FULL_TEXT
+#   digest_depth: full_digest
+#   citation_verified: true
+#   usability_status: VERIFIED_SOURCE
+#   last_updated: null
+
+version_relations: []
+# - from_source_id: SRC-001
+#   relation: SAME_WORK_VERSION
+#   to_source_id: SRC-002
+#   notes: null
+
+unresolved_candidates: []
+# - supplied_ref: null
+#   reason: ambiguous_identity
+#   attempted_at: null
+
+retracted_or_corrected: []
+# - source_id: SRC-001
+#   status: retracted
+#   notice_ref: null
+#   affected_evidence_ids: []
+
+last_updated: null
