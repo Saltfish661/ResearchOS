@@ -1,0 +1,158 @@
+schema_version: 0.1
+
+figure:
+  id: FIG-001
+  title: null
+  class: scientific_diagram
+  # data_figure | scientific_diagram | illustrative
+  role: null
+  # main_evidence | mechanism | architecture | workflow | setup | ablation | robustness | qualitative | decorative
+  message: null
+  status: planned
+  linked_claim_ids: []
+  linked_rq_ids: []
+  linked_experiment_ids: []
+  linked_source_ids: []
+
+authority:
+  scientific_content_source: []
+  visual_draft_status: NONE
+  # NONE | DRAFT_REFERENCE_ONLY | RECONSTRUCTED
+  generated_image_may_define_scientific_content: false
+
+editability:
+  target_grade: E3
+  # E0 raster only
+  # E1 vector shell
+  # E2 editable primitives
+  # E3 semantic groups
+  # E4 regenerable semantic figure
+  text_must_remain_editable: true
+  semantic_groups_required: true
+  allowed_raster_dependencies: []
+
+output_targets:
+  - svg
+  - pdf
+  - png_preview
+# Optional:
+# - pptx
+# - drawio
+# - canvas_scene
+
+layout:
+  aspect_ratio: null
+  orientation: horizontal
+  panel_gap: null
+  margins: null
+  panels: []
+  # - id: PANEL-A
+  #   title: null
+  #   purpose: null
+  #   order: 1
+  #   bounding_hint: null
+
+objects: []
+# - id: NODE-001
+#   panel_id: PANEL-A
+#   type: module
+#   label: null
+#   scientific_meaning: null
+#   source_refs: []
+#   style_role: primary
+#   layout_hint:
+#     row: null
+#     column: null
+#     align: null
+
+relations: []
+# - id: EDGE-001
+#   from: NODE-001
+#   to: NODE-002
+#   type: data_flow
+#   label: null
+#   scientific_meaning: null
+#   source_refs: []
+
+data_bindings: []
+# Used primarily for data figures.
+# - id: DATA-001
+#   source_artifact_ref: null
+#   table_or_object: null
+#   x: null
+#   y: null
+#   group: null
+#   filter: null
+#   aggregation: null
+#   uncertainty: null
+#   unit: null
+
+encodings:
+  x_axis:
+    label: null
+    unit: null
+    scale: linear
+  y_axis:
+    label: null
+    unit: null
+    scale: linear
+  series: []
+  legend: null
+  annotations: []
+
+caption_contract:
+  must_define: []
+  conditions: []
+  aggregation: null
+  uncertainty_meaning: null
+  sample_or_run_count: null
+  abbreviations: []
+
+style:
+  profile: academic_clean
+  typography:
+    family: null
+    base_size_pt: null
+  palette:
+    name: null
+    color_accessibility_required: true
+  line_weight: null
+  icon_style: null
+  background: transparent
+
+image_assist:
+  enabled: false
+  provider: null
+  model: null
+  prompt_ref: null
+  draft_asset_ref: null
+  immutable_scientific_elements: []
+  stylistic_freedom: []
+  forbidden_generated_elements:
+    - scientific_values
+    - unsupported_labels
+    - unsupported_modules
+    - unsupported_relationships
+  reconstruction_required: true
+
+qa_requirements:
+  scientific:
+    values_match_source: null
+    units_verified: null
+    uncertainty_verified: null
+  semantic:
+    terminology_matches_manuscript: null
+    relation_meanings_verified: null
+  visual:
+    final_size_readable: null
+    contrast_checked: null
+  editability:
+    text_editable: null
+    groups_logical: null
+    no_full_canvas_raster: null
+
+version:
+  spec_version: 1
+  previous_spec_ref: null
+  change_reason: null
+  last_updated: null
