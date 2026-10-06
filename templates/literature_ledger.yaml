@@ -1,4 +1,4 @@
-schema_version: 0.1
+schema_version: 0.2
 
 decision_questions: []
 # Example:
@@ -39,6 +39,10 @@ search_log: []
 papers: []
 # Example:
 # - id: P001
+#   source_id: SRC-001
+#   work_family_id: WORK-001
+#   source_digest_ref: null
+#   source_usability: VERIFIED_SOURCE
 #   citation:
 #     title: null
 #     authors: []
@@ -49,6 +53,9 @@ papers: []
 #     url: null
 #   publication_status: peer_reviewed
 #   citation_verified: false
+#   identity_confidence: null
+#   access_status: null
+#   digest_depth: null
 #   version_notes: null
 #   triage: CORE
 #   research_problem: null
@@ -68,6 +75,7 @@ papers: []
 #   supports_claim_ids: []
 #   contradicts_claim_ids: []
 #   evidence_locations: []
+#   source_evidence_ids: []
 #   notes: null
 
 sota_families: []
