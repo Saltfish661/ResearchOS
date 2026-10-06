@@ -1,0 +1,23 @@
+schema_version: 0.1
+experiments: []
+# Example:
+# - id: EXP-001
+#   question_or_hypothesis_ids: []
+#   purpose: null
+#   discriminating_prediction: null
+#   controls: []
+#   baselines: []
+#   dataset_version: null
+#   code_commit: null
+#   config: null
+#   seeds: []
+#   hardware: null
+#   metrics: []
+#   failure_criterion: null
+#   result_summary: null
+#   artifact_refs: []
+#   supports_claim_ids: []
+#   contradicts_claim_ids: []
+#   alternative_explanations: []
+#   status: planned        # planned | running | completed | failed | invalidated
+#   review_status: unreviewed
